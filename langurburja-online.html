@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Langur Burja</title>
+<!-- Add to Home Screen support (iOS): opens full-screen with no browser bar -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Langur Burja">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0f2e1f">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<!-- Firebase (free realtime sync) — no server needed, just your own free project -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+<style>
+  :root {
+    --forest: #0f2e1f;
+    --forest-deep: #081b12;
+    --maroon: #6e1423;
+    --maroon-deep: #4a0d18;
+    --gold: #d4af37;
+    --gold-bright: #f2d675;
+    --cream: #f6ecd9;
+    --cream-dim: #e6d8b8;
+    --die-yellow-1: #f2cf5c;
+    --die-yellow-2: #d9a92e;
+    --die-yellow-3: #b8841c;
+    --shadow-color: rgba(0,0,0,0.55);
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at 50% 0%, #163d28 0%, var(--forest) 45%, var(--forest-deep) 100%);
+    font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+    color: var(--cream);
+    overflow-x: hidden;
+  }
+
+  body {
+    background-image:
+      radial-gradient(circle at 50% 0%, #163d28 0%, var(--forest) 45%, var(--forest-deep) 100%),
+      repeating-linear-gradient(45deg, rgba(212,175,55,0.035) 0px, rgba(212,175,55,0.035) 2px, transparent 2px, transparent 26px);
+  }
+
+  .app {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 18px 16px 40px;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* ---------- Header ---------- */
+  .header {
+    text-align: center;
+    padding: 14px 10px 16px;
+    position: relative;
+  }
+
+  .header::before, .header::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 30%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.6;
+  }
+  .header::before { left: 0; }
+  .header::after { right: 0; }
+
+  .title {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0;
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold) 60%, #a97e1f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.25);
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--cream-dim);
+    letter-spacing: 1.5px;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  .room-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, rgba(110,20,35,0.55), rgba(74,13,24,0.55));
+    border: 1px solid rgba(212,175,55,0.4);
+    border-radius: 14px;
+    font-size: 12.5px;
+  }
+
+  .room-bar .room-name-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .room-bar .room-name { color: var(--gold-bright); font-weight: 600; background: none; border: none; padding: 0; }
+  .room-bar .edit-name-btn {
+    background: none;
+    border: none;
+    color: var(--cream-dim);
+    font-size: 13px;
+    padding: 2px 4px;
+    opacity: 0.75;
+  }
+  .room-bar .players { color: var(--cream-dim); }
+  .players b { color: var(--gold-bright); }
+
+  /* ---------- Players panel ---------- */
+  .players-panel {
+    margin-top: 10px;
+    padding: 12px 14px;
+    background: linear-gradient(135deg, rgba(15,46,31,0.6), rgba(8,27,18,0.6));
+    border: 1px solid rgba(212,175,55,0.28);
+    border-radius: 14px;
+  }
+
+  .players-panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .players-panel-title {
+    font-size: 11.5px;
+    letter-spacing: 2px;
+    color: var(--gold-bright);
+  }
+
+  .conn-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #7a1120;
+    box-shadow: 0 0 6px rgba(122,17,32,0.8);
+  }
+  .conn-dot.online {
+    background: #4caf6a;
+    box-shadow: 0 0 6px rgba(76,175,106,0.8);
+  }
+
+  .player-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 20px;
+  }
+
+  .player-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px 6px 6px;
+    background: rgba(0,0,0,0.22);
+    border: 1px solid rgba(212,175,55,0.25);
+    border-radius: 20px;
+    font-size: 12.5px;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .player-chip.active {
+    border-color: var(--gold-bright);
+    background: rgba(212,175,55,0.18);
+  }
+
+  .player-chip.is-host {
+    border-color: rgba(122,17,32,0.6);
+  }
+
+  .player-chip .avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(160deg, var(--gold-bright), var(--gold) 70%, #9c7420);
+    color: #2a1a05;
+    font-weight: 700;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+  }
+
+  .player-chip .name-col {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .player-chip .role-tag {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    color: var(--gold-bright);
+    opacity: 0.8;
+  }
+
+  .player-chip .bal-tag {
+    font-size: 10.5px;
+    color: var(--cream-dim);
+  }
+
+  .player-chip .remove-player {
+    background: none;
+    border: none;
+    color: var(--cream-dim);
+    font-size: 13px;
+    opacity: 0.7;
+    padding: 0 2px;
+  }
+
+  .make-host-btn {
+    background: none;
+    border: 1px solid rgba(212,175,55,0.4);
+    color: var(--gold-bright);
+    font-size: 8.5px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    padding: 1px 4px;
+    margin-top: 2px;
+  }
+
+  .add-player-row {
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .add-player-row input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 8px;
+    padding: 7px 9px;
+    color: var(--cream);
+    font-size: 12.5px;
+  }
+  .add-player-row input[type="text"]::placeholder { color: rgba(230,216,184,0.4); }
+
+  .add-player-row select {
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 8px;
+    color: var(--cream);
+    font-size: 11.5px;
+    padding: 0 4px;
+  }
+
+  .add-player-row button {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #2a1a05;
+    background: linear-gradient(160deg, var(--gold-bright), var(--gold));
+    border: none;
+    border-radius: 8px;
+    padding: 0 12px;
+  }
+
+  .active-player-line {
+    margin-top: 10px;
+    font-size: 11.5px;
+    color: var(--cream-dim);
+  }
+  .active-player-line b { color: var(--gold-bright); }
+
+  .share-line {
+    margin-top: 10px;
+    font-size: 11px;
+    color: rgba(230,216,184,0.6);
+    word-break: break-all;
+  }
+
+  .credit-line {
+    text-align: center;
+    font-size: 11px;
+    color: rgba(230,216,184,0.55);
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---------- Bank panel: add funds / transfer between players ---------- */
+  .bank-panel {
+    margin-top: 10px;
+    padding: 12px 14px;
+    background: linear-gradient(135deg, rgba(15,46,31,0.6), rgba(8,27,18,0.6));
+    border: 1px solid rgba(212,175,55,0.28);
+    border-radius: 14px;
+  }
+
+  .bank-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .bank-row select {
+    flex: 1;
+    min-width: 0;
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 8px;
+    color: var(--cream);
+    font-size: 12px;
+    padding: 7px 6px;
+  }
+
+  .bank-arrow {
+    color: var(--gold-bright);
+    font-size: 14px;
+    flex: 0 0 auto;
+  }
+
+  .bank-amt-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 0 0 auto;
+  }
+
+  .bank-action-btn {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #2a1a05;
+    background: linear-gradient(160deg, var(--gold-bright), var(--gold));
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .bank-msg {
+    margin-top: 8px;
+    font-size: 11.5px;
+    color: var(--cream-dim);
+    min-height: 14px;
+  }
+  .bank-msg.error { color: #f0a0a8; }
+  .bank-msg.success { color: #7fe0a0; }
+
+  /* ---------- Stage ---------- */
+  .stage {
+    position: relative;
+    margin-top: 20px;
+    height: 300px;
+    border-radius: 20px;
+    background:
+      radial-gradient(ellipse at 50% 85%, rgba(0,0,0,0.45), transparent 60%),
+      linear-gradient(180deg, #123324 0%, #0c2317 100%);
+    border: 1px solid rgba(212,175,55,0.28);
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.5), 0 10px 24px rgba(0,0,0,0.4);
+    overflow: hidden;
+  }
+
+  .stage-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.08;
+    background-image: radial-gradient(circle, var(--gold) 1px, transparent 1.4px);
+    background-size: 22px 22px;
+    pointer-events: none;
+  }
+
+  /* Paper / cloth board the cup sits and slides on */
+  .board {
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+    transform: translateX(-50%);
+    width: 84%;
+    height: 76px;
+    background:
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.03) 0 2px, transparent 2px 6px),
+      linear-gradient(180deg, #e9d9ad, #d8c48c);
+    border: 2px solid #8a6a2a;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.25), 0 6px 14px rgba(0,0,0,0.4);
+  }
+
+  .status-banner {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12.5px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--gold-bright);
+    padding: 6px 16px;
+    border: 1px solid rgba(212,175,55,0.5);
+    border-radius: 20px;
+    background: rgba(8,27,18,0.6);
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+    z-index: 20;
+  }
+
+  .dice-field {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 46px 20px 96px;
+    z-index: 10;
+  }
+
+  /* ---------- Dice ---------- */
+  /* Sized so all 6 dice always fit on one row, however narrow the phone is:
+     6 equal squares + 5x 8px gaps must exactly fill the field's width. */
+  .die {
+    width: calc((100% - 40px) / 6);
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    background: linear-gradient(160deg, var(--die-yellow-1), var(--die-yellow-2) 60%, var(--die-yellow-3));
+    border-radius: 11px;
+    border: 2px solid #4a3410;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+      0 8px 14px var(--shadow-color),
+      inset 0 -3px 0 rgba(0,0,0,0.18),
+      inset 0 3px 0 rgba(255,255,255,0.35);
+    position: relative;
+    will-change: transform, opacity;
+    overflow: hidden;
+    padding: 5px;
+  }
+
+  .die .face-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .die.reveal-glow {
+    animation: settleGlow 0.7s ease forwards;
+  }
+
+  @keyframes settleGlow {
+    0%   { transform: translateY(-10px) scale(0.85); box-shadow: 0 8px 14px var(--shadow-color); }
+    55%  { transform: translateY(4px) scale(1.08); box-shadow: 0 0 22px 6px rgba(242,214,117,0.65), 0 8px 14px var(--shadow-color); }
+    100% { transform: translateY(0) scale(1); box-shadow: 0 0 14px 3px rgba(242,214,117,0.4), 0 8px 14px var(--shadow-color); }
+  }
+
+  /* ---------- Cup ---------- */
+  .cup-wrap {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 118px;
+    z-index: 15;
+    transition: transform 0.9s cubic-bezier(.4,0,.2,1);
+  }
+
+  .cup-wrap.lifted {
+    transform: translate(-50%, -190px);
+  }
+
+  .cup-wrap.sliding {
+    animation: cupSlide 0.42s ease-in-out infinite;
+  }
+
+  @keyframes cupSlide {
+    0%   { transform: translate(-50%, 0) rotate(0deg); }
+    15%  { transform: translate(calc(-50% - 34px), -4px) rotate(-10deg); }
+    30%  { transform: translate(calc(-50% + 22px), 3px) rotate(7deg); }
+    45%  { transform: translate(calc(-50% - 16px), -3px) rotate(-6deg); }
+    60%  { transform: translate(calc(-50% + 32px), 2px) rotate(9deg); }
+    75%  { transform: translate(calc(-50% - 24px), -2px) rotate(-8deg); }
+    90%  { transform: translate(calc(-50% + 10px), 1px) rotate(4deg); }
+    100% { transform: translate(-50%, 0) rotate(0deg); }
+  }
+
+  .cup-wrap.turning {
+    animation: cupTurn 0.7s ease-in-out;
+  }
+
+  @keyframes cupTurn {
+    0%   { transform: translate(-50%, 0) rotate(0deg) scaleX(1); }
+    50%  { transform: translate(-50%, -6px) rotate(190deg) scaleX(0.92); }
+    100% { transform: translate(-50%, 0) rotate(360deg) scaleX(1); }
+  }
+
+  .cup-shadow {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96px;
+    height: 18px;
+    background: radial-gradient(ellipse, rgba(0,0,0,0.5), transparent 70%);
+    border-radius: 50%;
+    transition: opacity 0.4s ease, width 0.4s ease;
+  }
+
+  .cup-wrap.lifted .cup-shadow { opacity: 0.35; width: 70px; }
+
+  .cup-body {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 108px;
+    height: 92px;
+    background: linear-gradient(90deg,
+      #7a1120 0%, #9c1c2e 18%, var(--maroon) 40%, var(--maroon) 60%, #6a1120 82%, #4a0d18 100%);
+    border-radius: 0 0 18px 18px / 0 0 26px 26px;
+    box-shadow:
+      inset -10px 0 18px rgba(0,0,0,0.45),
+      inset 10px 0 14px rgba(255,255,255,0.06),
+      0 14px 20px var(--shadow-color);
+    overflow: hidden;
+  }
+
+  .cup-band {
+    position: absolute;
+    left: 0; right: 0;
+    height: 9px;
+    background: repeating-linear-gradient(90deg, var(--gold) 0 8px, #a9821f 8px 16px);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  .cup-band.top { top: 10px; }
+  .cup-band.bottom { bottom: 8px; }
+
+  .cup-emblem {
+    position: absolute;
+    top: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #b5892a, #7d5c15);
+    border: 2px solid var(--gold-bright);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px 3px rgba(255,255,255,0.3);
+  }
+
+  .cup-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 118px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at 50% 40%, #2a0810 0%, #170509 70%);
+    border: 3px solid var(--gold);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5), inset 0 4px 10px rgba(0,0,0,0.6);
+  }
+
+  /* ---------- Controls ---------- */
+  .panel {
+    margin-top: 18px;
+    background: linear-gradient(160deg, rgba(15,46,31,0.7), rgba(8,27,18,0.7));
+    border: 1px solid rgba(212,175,55,0.32);
+    border-radius: 18px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .player-bet-card {
+    background: rgba(0,0,0,0.16);
+    border: 1px solid rgba(212,175,55,0.22);
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .player-bet-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .player-bet-card-head .pbc-name {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--gold-bright);
+  }
+
+  .player-bet-card-head .pbc-balance {
+    font-size: 13px;
+    color: var(--cream-dim);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .pbc-total {
+    text-align: right;
+    font-size: 11px;
+    color: var(--cream-dim);
+    margin-top: 6px;
+  }
+  .pbc-total b { color: var(--gold-bright); }
+
+  .bet-label {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: var(--cream-dim);
+    margin-bottom: 8px;
+  }
+
+  .bet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .bet-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(212,175,55,0.2);
+    border-radius: 12px;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .bet-row.active {
+    border-color: rgba(242,214,117,0.7);
+    background: rgba(212,175,55,0.12);
+  }
+
+  .bet-row .bet-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 auto;
+    background: linear-gradient(160deg, var(--die-yellow-1), var(--die-yellow-2) 60%, var(--die-yellow-3));
+    border-radius: 8px;
+    border: 2px solid #4a3410;
+    padding: 3px;
+  }
+  .bet-row .bet-icon svg { width: 100%; height: 100%; display: block; }
+
+  .bet-row .bet-name {
+    flex: 1;
+    font-size: 13px;
+    color: var(--cream);
+  }
+
+  .bet-row .bet-amt-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .bet-amt-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+    border: 1px solid var(--gold);
+    background: linear-gradient(160deg, #1a4a30, #0f2e1f);
+    color: var(--gold-bright);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .bet-amt-btn:active { transform: scale(0.92); }
+
+  .bet-amt-value {
+    min-width: 44px;
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--gold-bright);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .total-stake-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11.5px;
+    color: var(--cream-dim);
+    margin: 4px 2px 14px;
+  }
+  .total-stake-line b { color: var(--gold-bright); }
+  .total-stake-line.over b { color: #f0a0a8; }
+
+  .payout-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .payout-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  .payout-row .sym-mini { margin-right: 6px; }
+
+  .payout-row.win {
+    color: #7fe0a0;
+    background: rgba(76,175,106,0.12);
+    border: 1px solid rgba(76,175,106,0.35);
+  }
+
+  .payout-row.lose {
+    color: #f0a0a8;
+    background: rgba(122,17,32,0.18);
+    border: 1px solid rgba(122,17,32,0.4);
+  }
+
+  .payout-total {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 6px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .payout-total.win {
+    color: #7fe0a0;
+    background: rgba(76,175,106,0.16);
+    border: 1px solid rgba(76,175,106,0.4);
+  }
+
+  .payout-total.lose {
+    color: #f0a0a8;
+    background: rgba(122,17,32,0.22);
+    border: 1px solid rgba(122,17,32,0.45);
+  }
+
+  .stake-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .stake-label {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: var(--cream-dim);
+  }
+
+  .stake-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .stake-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid var(--gold);
+    background: linear-gradient(160deg, #1a4a30, #0f2e1f);
+    color: var(--gold-bright);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stake-btn:active { transform: scale(0.92); }
+
+  .stake-value {
+    min-width: 66px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--gold-bright);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .action-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .btn {
+    flex: 1;
+    padding: 15px 10px;
+    border-radius: 14px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .btn-roll {
+    background: linear-gradient(160deg, var(--gold-bright), var(--gold) 55%, #9c7420);
+    color: #2a1a05;
+    box-shadow: 0 6px 14px rgba(212,175,55,0.35);
+    flex: 2;
+  }
+  .btn-roll:active { transform: translateY(1px); }
+  .btn-roll:disabled {
+    opacity: 0.45;
+    box-shadow: none;
+  }
+
+  .btn-reset {
+    background: linear-gradient(160deg, #7a1120, var(--maroon-deep));
+    color: var(--cream);
+    border: 1px solid rgba(212,175,55,0.4);
+  }
+  .btn-reset:active { transform: translateY(1px); }
+
+  /* ---------- Result ---------- */
+  .result-panel {
+    margin-top: 16px;
+    background: linear-gradient(160deg, rgba(15,46,31,0.7), rgba(8,27,18,0.7));
+    border: 1px solid rgba(212,175,55,0.32);
+    border-radius: 18px;
+    padding: 16px;
+    display: none;
+  }
+
+  .result-panel.show { display: block; }
+
+  .result-title {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--gold-bright);
+    margin-bottom: 12px;
+  }
+
+  .result-dice-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+
+  .result-dice-row .die { width: 44px; height: 44px; }
+
+  .tally {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .tally-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(212,175,55,0.2);
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  .tally-item .sym-mini {
+    width: 22px;
+    height: 22px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    background: linear-gradient(160deg, var(--die-yellow-1), var(--die-yellow-2));
+    border: 1px solid #4a3410;
+    padding: 2px;
+  }
+  .tally-item .sym-mini svg { width: 100%; height: 100%; display: block; }
+
+  .tally-item .cnt { font-weight: 700; color: var(--gold-bright); }
+
+  .round-complete {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 12.5px;
+    letter-spacing: 2px;
+    color: var(--cream-dim);
+  }
+
+  /* ---------- History ---------- */
+  .history-panel {
+    margin-top: 16px;
+    background: linear-gradient(160deg, rgba(15,46,31,0.7), rgba(8,27,18,0.7));
+    border: 1px solid rgba(212,175,55,0.32);
+    border-radius: 18px;
+    padding: 16px;
+  }
+
+  .history-title {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    color: var(--gold-bright);
+    margin-bottom: 10px;
+  }
+
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  .history-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    background: rgba(0,0,0,0.18);
+    border-radius: 10px;
+    border: 1px solid rgba(212,175,55,0.15);
+  }
+
+  .history-round {
+    font-size: 11.5px;
+    color: var(--cream-dim);
+    min-width: 46px;
+  }
+
+  .history-dice {
+    display: flex;
+    gap: 4px;
+  }
+
+  .history-dice .sym-mini {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    background: linear-gradient(160deg, var(--die-yellow-1), var(--die-yellow-2));
+    border: 1px solid #4a3410;
+    padding: 1px;
+  }
+  .history-dice .sym-mini svg { width: 100%; height: 100%; display: block; }
+
+  .history-empty {
+    font-size: 12.5px;
+    color: rgba(230,216,184,0.45);
+    text-align: center;
+    padding: 10px 0;
+  }
+  /* ---------- Join overlay ---------- */
+  .join-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(4,14,9,0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 20px;
+  }
+
+  .join-card {
+    width: 100%;
+    max-width: 340px;
+    background: linear-gradient(160deg, rgba(15,46,31,0.95), rgba(8,27,18,0.95));
+    border: 1px solid rgba(212,175,55,0.4);
+    border-radius: 18px;
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  }
+
+  .join-card h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--gold-bright);
+    letter-spacing: 2px;
+    margin: 0 0 8px;
+  }
+
+  .join-card p {
+    color: var(--cream-dim);
+    font-size: 13px;
+    margin: 0 0 16px;
+  }
+
+  .join-card input {
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(212,175,55,0.35);
+    border-radius: 10px;
+    padding: 12px;
+    color: var(--cream);
+    font-size: 15px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .join-card button {
+    width: 100%;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2a1a05;
+    background: linear-gradient(160deg, var(--gold-bright), var(--gold));
+  }
+
+  .join-hint {
+    margin-top: 12px !important;
+    font-size: 11px !important;
+    color: rgba(230,216,184,0.5) !important;
+  }
+</style>
+</head>
+<body>
+<div class="join-overlay" id="joinOverlay">
+  <div class="join-card">
+    <h2>LANGUR BURJA</h2>
+    <p>Enter your name to join this game.</p>
+    <input type="text" id="joinNameInput" placeholder="Your name" maxlength="20" autofocus>
+    <button id="joinBtn">JOIN GAME</button>
+    <p class="join-hint" id="joinHint">Connecting…</p>
+  </div>
+</div>
+
+<div class="app">
+
+  <div class="header">
+    <h1 class="title">LANGUR BURJA</h1>
+    <div class="subtitle">Traditional Nepali Dice Game</div>
+    <div class="room-bar">
+      <span class="room-name-wrap">
+        <span class="room-name" id="roomName">My Game</span>
+        <button class="edit-name-btn" id="editNameBtn" aria-label="Rename game">✎</button>
+      </span>
+      <span class="players">Players: <b id="playerCount">1/15</b></span>
+    </div>
+
+    <div class="players-panel">
+      <div class="players-panel-head">
+        <span class="players-panel-title">PLAYERS</span>
+        <span class="conn-dot" id="connDot"></span>
+      </div>
+      <div class="player-chips" id="playerChips"></div>
+      <div class="active-player-line" id="activePlayerLine"></div>
+      <div class="share-line" id="shareLine"></div>
+    </div>
+
+    <div class="bank-panel">
+      <div class="players-panel-head">
+        <span class="players-panel-title">BANK</span>
+      </div>
+
+      <div class="bank-row">
+        <select id="addBalPlayer"></select>
+        <div class="bank-amt-control">
+          <button class="bet-amt-btn" id="addBalMinus">−</button>
+          <span class="bet-amt-value" id="addBalAmount">100</span>
+          <button class="bet-amt-btn" id="addBalPlus">+</button>
+        </div>
+        <button class="bank-action-btn" id="addBalBtn">ADD FUNDS</button>
+      </div>
+
+      <div class="bank-row">
+        <select id="transferFrom"></select>
+        <span class="bank-arrow">→</span>
+        <select id="transferTo"></select>
+      </div>
+      <div class="bank-row">
+        <div class="bank-amt-control">
+          <button class="bet-amt-btn" id="transferMinus">−</button>
+          <span class="bet-amt-value" id="transferAmount">100</span>
+          <button class="bet-amt-btn" id="transferPlus">+</button>
+        </div>
+        <button class="bank-action-btn" id="transferBtn">TRANSFER</button>
+      </div>
+      <div class="bank-msg" id="bankMsg"></div>
+    </div>
+
+    <div class="credit-line">Created by Abin</div>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="stage-pattern"></div>
+    <div class="status-banner" id="statusBanner">READY TO ROLL</div>
+
+    <div class="board" id="board"></div>
+
+    <div class="dice-field" id="diceField"></div>
+
+    <div class="cup-wrap" id="cupWrap">
+      <div class="cup-shadow"></div>
+      <div class="cup-body">
+        <div class="cup-band top"></div>
+        <div class="cup-emblem">🐒</div>
+        <div class="cup-band bottom"></div>
+      </div>
+      <div class="cup-top"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="bet-label">PLACE YOUR BETS — every player, one after another</div>
+    <div class="all-bets" id="allBets"></div>
+    <div class="total-stake-line" id="totalStakeLine">
+      <span>Total staked (all players)</span>
+      <span><b id="totalStakeValue">0</b></span>
+    </div>
+
+    <div class="action-row">
+      <button class="btn btn-roll" id="rollBtn">ROLL 6 DICE</button>
+      <button class="btn btn-reset" id="resetBtn">RESET</button>
+    </div>
+  </div>
+
+  <div class="result-panel" id="resultPanel">
+    <div class="result-title">RESULT</div>
+    <div class="result-dice-row" id="resultDiceRow"></div>
+    <div class="tally" id="tally"></div>
+    <div class="payout-breakdown" id="payoutBreakdown"></div>
+    <div class="payout-total" id="payoutTotal"></div>
+    <div class="round-complete">ROUND COMPLETE</div>
+  </div>
+
+  <div class="history-panel">
+    <div class="history-title">ROUND HISTORY</div>
+    <div class="history-list" id="historyList">
+      <div class="history-empty" id="historyEmpty">No rounds played yet</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  // Hand-carved style face art, echoing the traditional bakelite Langur Burja
+  // dice: thick black outlines, red fill, tan ground, concentric-circle motifs.
+  const FACES = {
+    // Flag on a pole, checkered pennant with a swallowtail cut
+    Jhanda: `
+      <line x1="30" y1="10" x2="30" y2="90" stroke="#241608" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="30" cy="10" r="4.5" fill="#241608"/>
+      <path d="M30 16 C50 12,58 20,72 16 C68 26,68 34,72 44 C58 40,50 48,30 44 Z"
+            fill="#b3202c" stroke="#241608" stroke-width="4" stroke-linejoin="round"/>
+      <g stroke="#241608" stroke-width="1.6" opacity="0.75">
+        <line x1="38" y1="17" x2="38" y2="43"/>
+        <line x1="46" y1="15" x2="46" y2="45"/>
+        <line x1="54" y1="15" x2="54" y2="46"/>
+        <line x1="62" y1="16" x2="62" y2="45"/>
+        <line x1="34" y1="24" x2="70" y2="21"/>
+        <line x1="33" y1="32" x2="71" y2="30"/>
+        <line x1="34" y1="39" x2="70" y2="39"/>
+      </g>
+      <path d="M56 46 L84 52 L56 58 Z" fill="#241608"/>
+    `,
+    // Crown: beaded scalloped top, banded base, small cross finial
+    Burja: `
+      <path d="M22 84 L22 62
+               C22 62,30 72,32 60
+               C34 72,42 76,42 60
+               C42 76,50 80,50 60
+               C50 80,58 76,58 60
+               C58 76,66 72,68 60
+               C70 72,78 62,78 62
+               L78 84 Z"
+            fill="#b3202c" stroke="#241608" stroke-width="4" stroke-linejoin="round"/>
+      <rect x="20" y="80" width="60" height="8" rx="2" fill="#241608"/>
+      <g fill="#241608">
+        <circle cx="22" cy="62" r="4.6"/>
+        <circle cx="32" cy="60" r="4.6"/>
+        <circle cx="42" cy="60" r="4.6"/>
+        <circle cx="50" cy="60" r="4.6"/>
+        <circle cx="58" cy="60" r="4.6"/>
+        <circle cx="68" cy="60" r="4.6"/>
+        <circle cx="78" cy="62" r="4.6"/>
+      </g>
+      <rect x="44" y="22" width="12" height="8" rx="1.5" fill="#241608"/>
+      <rect x="47.5" y="12" width="5" height="12" fill="#241608"/>
+      <rect x="42.5" y="15" width="15" height="4" fill="#241608"/>
+    `,
+    // Diamond frame with an 8-point sunburst / rosette
+    Itta: `
+      <path d="M50 6 L94 50 L50 94 L6 50 Z" fill="#b3202c" stroke="#241608" stroke-width="4.5"/>
+      <g stroke="#e9c65b" stroke-width="3.6" stroke-linecap="round">
+        <line x1="50" y1="22" x2="50" y2="38"/>
+        <line x1="50" y1="62" x2="50" y2="78"/>
+        <line x1="22" y1="50" x2="38" y2="50"/>
+        <line x1="62" y1="50" x2="78" y2="50"/>
+        <line x1="31" y1="31" x2="42" y2="42"/>
+        <line x1="58" y1="58" x2="69" y2="69"/>
+        <line x1="69" y1="31" x2="58" y2="42"/>
+        <line x1="42" y1="58" x2="31" y2="69"/>
+      </g>
+      <circle cx="50" cy="50" r="9" fill="#e9c65b" stroke="#241608" stroke-width="3.5"/>
+    `,
+    // Heart with two ringed eyes and hatch lines at the base
+    Paan: `
+      <path d="M50 88 C19 62,17 34,38 25 C46 21,50 32,50 40 C50 32,54 21,62 25 C83 34,81 62,50 88 Z"
+            fill="#b3202c" stroke="#241608" stroke-width="4.5"/>
+      <circle cx="38" cy="44" r="8.5" fill="#b3202c" stroke="#241608" stroke-width="3.6"/>
+      <circle cx="38" cy="44" r="3" fill="#241608"/>
+      <circle cx="62" cy="44" r="8.5" fill="#b3202c" stroke="#241608" stroke-width="3.6"/>
+      <circle cx="62" cy="44" r="3" fill="#241608"/>
+      <g stroke="#241608" stroke-width="2.2">
+        <line x1="42" y1="63" x2="42" y2="76"/>
+        <line x1="50" y1="67" x2="50" y2="80"/>
+        <line x1="58" y1="63" x2="58" y2="76"/>
+      </g>
+    `,
+    // Spade with a fanned/feathered top and two ringed eyes at the base
+    Hukum: `
+      <path d="M50 12
+               C38 30,20 42,20 60
+               C20 72,30 78,40 74
+               C43 73,46 71,48 68
+               C46 78,40 84,28 87
+               L72 87
+               C60 84,54 78,52 68
+               C54 71,57 73,60 74
+               C70 78,80 72,80 60
+               C80 42,62 30,50 12 Z"
+            fill="#241608"/>
+      <g stroke="#e0b83c" stroke-width="2.4">
+        <line x1="50" y1="18" x2="38" y2="42"/>
+        <line x1="50" y1="18" x2="50" y2="46"/>
+        <line x1="50" y1="18" x2="62" y2="42"/>
+      </g>
+      <circle cx="40" cy="62" r="9" fill="#241608" stroke="#e0b83c" stroke-width="3"/>
+      <circle cx="40" cy="62" r="3.2" fill="#e0b83c"/>
+      <circle cx="60" cy="62" r="9" fill="#241608" stroke="#e0b83c" stroke-width="3"/>
+      <circle cx="60" cy="62" r="3.2" fill="#e0b83c"/>
+    `,
+    // Trefoil of three ringed circles over a rounded club stem
+    Chidi: `
+      <path d="M38 70 C38 58,44 52,50 52 C56 52,62 58,62 70 C62 80,54 84,50 88 C46 84,38 80,38 70 Z" fill="#241608"/>
+      <circle cx="50" cy="28" r="14" fill="#241608"/>
+      <circle cx="50" cy="28" r="6" fill="#e0b83c"/>
+      <circle cx="31" cy="52" r="14" fill="#241608"/>
+      <circle cx="31" cy="52" r="6" fill="#e0b83c"/>
+      <circle cx="69" cy="52" r="14" fill="#241608"/>
+      <circle cx="69" cy="52" r="6" fill="#e0b83c"/>
+    `
+  };
+
+  const SYMBOLS = [
+    { name: "Jhanda" },
+    { name: "Burja"  },
+    { name: "Itta"   },
+    { name: "Paan"   },
+    { name: "Hukum"  },
+    { name: "Chidi"  }
+  ];
+
+  function faceSVG(name) {
+    return `<svg class="face-svg" viewBox="0 0 100 100">${FACES[name]}</svg>`;
+  }
+
+  const stage = document.getElementById('stage');
+  const diceField = document.getElementById('diceField');
+  const cupWrap = document.getElementById('cupWrap');
+  const statusBanner = document.getElementById('statusBanner');
+  const rollBtn = document.getElementById('rollBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const allBetsEl = document.getElementById('allBets');
+  const totalStakeValue = document.getElementById('totalStakeValue');
+  const totalStakeLine = document.getElementById('totalStakeLine');
+  const payoutBreakdown = document.getElementById('payoutBreakdown');
+  const payoutTotal = document.getElementById('payoutTotal');
+  const resultPanel = document.getElementById('resultPanel');
+  const resultDiceRow = document.getElementById('resultDiceRow');
+  const tallyEl = document.getElementById('tally');
+  const historyList = document.getElementById('historyList');
+  const historyEmpty = document.getElementById('historyEmpty');
+  const roomName = document.getElementById('roomName');
+  const editNameBtn = document.getElementById('editNameBtn');
+  const playerCount = document.getElementById('playerCount');
+  const playerChips = document.getElementById('playerChips');
+  const connDot = document.getElementById('connDot');
+  const shareLine = document.getElementById('shareLine');
+  const activePlayerLine = document.getElementById('activePlayerLine');
+  const addBalPlayer = document.getElementById('addBalPlayer');
+  const addBalMinus = document.getElementById('addBalMinus');
+  const addBalPlus = document.getElementById('addBalPlus');
+  const addBalAmount = document.getElementById('addBalAmount');
+  const addBalBtn = document.getElementById('addBalBtn');
+  const transferFrom = document.getElementById('transferFrom');
+  const transferTo = document.getElementById('transferTo');
+  const transferMinus = document.getElementById('transferMinus');
+  const transferPlus = document.getElementById('transferPlus');
+  const transferAmount = document.getElementById('transferAmount');
+  const transferBtn = document.getElementById('transferBtn');
+  const bankMsg = document.getElementById('bankMsg');
+  const joinOverlay = document.getElementById('joinOverlay');
+  const joinNameInput = document.getElementById('joinNameInput');
+  const joinBtn = document.getElementById('joinBtn');
+  const joinHint = document.getElementById('joinHint');
+
+  const MAX_PLAYERS = 15;
+  const BET_STEP = 1;
+  const BANK_STEP = 50;
+  const SYMBOL_NAMES = SYMBOLS.map(s => s.name);
+
+  // =========================================================================
+  // FIREBASE SETUP — replace these 3 values with your own free project's
+  // config before hosting this file. Get them from:
+  //   Firebase console -> your project -> Project settings (gear icon)
+  //   -> scroll to "Your apps" -> Web app -> the firebaseConfig object.
+  // Only apiKey, databaseURL and projectId are actually needed here.
+  // =========================================================================
+  const firebaseConfig = {
+    apiKey: "AIzaSyB5rJu0jVv5V1oBNm7Gauho4iGZetB7BkE",
+    databaseURL: "https://langur-burja-951fa-default-rtdb.firebaseio.com",
+    projectId: "langur-burja-951fa"
+  };
+  const ROOM_PATH = 'rooms/main'; // everyone using this file+project shares this one room
+
+  if (firebaseConfig.apiKey.startsWith('PASTE_')) {
+    joinHint.textContent = 'This file still has placeholder Firebase settings — edit firebaseConfig near the top of the <script> before sharing this link.';
+    joinBtn.disabled = true;
+  }
+
+  if (typeof firebase === 'undefined') {
+    joinHint.textContent = 'Could not load Firebase — check your internet connection, or an ad/script blocker may be preventing it, then reload.';
+    joinBtn.disabled = true;
+    setStatus('CONNECTION ERROR');
+    return;
+  }
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+
+  // ---------- Networked state: Firebase is the single source of truth. ----------
+  // `players` and `playerBets` below are always a mirror of the last value
+  // read from the database — every action writes directly to Firebase and
+  // waits for the database's own listener to reflect it back, rather than
+  // mutating these arrays directly.
+  let selfId = null;
+  let players = [];      // [{ id, name, role, balance }]
+  let playerBets = {};   // { playerId: { SymbolName: amount } }
+  let roomNameStr = 'My Game';
+
+  function hostIndex() {
+    return players.findIndex(p => p.role === 'host');
+  }
+
+  function setRole(id, role) {
+    const updates = {};
+    if (role === 'host') {
+      const existingHost = players.find(p => p.role === 'host');
+      if (existingHost && existingHost.id !== id) {
+        updates[`${ROOM_PATH}/players/${existingHost.id}/role`] = 'player';
+      }
+    }
+    updates[`${ROOM_PATH}/players/${id}/role`] = role;
+    db.ref().update(updates);
+  }
+
+  function betsFor(id) {
+    return playerBets[id] || {};
+  }
+
+  function totalStakedFor(id) {
+    return Object.values(betsFor(id)).reduce((sum, v) => sum + v, 0);
+  }
+
+  function playersArrayFromSnapshot(playersObj) {
+    if (!playersObj) return [];
+    return Object.keys(playersObj).map(id => ({ id, ...playersObj[id] }));
+  }
+
+  function applyState(roomVal) {
+    roomVal = roomVal || {};
+    roomNameStr = roomVal.roomName || 'My Game';
+    roomName.textContent = roomNameStr;
+    players = playersArrayFromSnapshot(roomVal.players);
+    playerBets = roomVal.bets || {};
+    renderPlayers();
+    renderAllBets();
+  }
+
+  // ---------- Firebase connection + realtime listeners ----------
+  let firebaseReady = false;
+
+  db.ref('.info/connected').on('value', (snap) => {
+    const online = snap.val() === true;
+    connDot.classList.toggle('online', online);
+    if (online) {
+      firebaseReady = true;
+      if (!joinBtn.disabled) joinHint.textContent = 'Connected. Pick a name and join.';
+    } else {
+      setStatus('DISCONNECTED');
+      shareLine.textContent = 'Disconnected \u2014 trying to reconnect...';
+    }
+  });
+
+  // Mirror the whole room (roomName, players, bets) into local state on
+  // every change, for every connected client.
+  db.ref(ROOM_PATH).on('value', (snap) => {
+    applyState(snap.val());
+  });
+
+  // A separate, tiny "lastRoll" node is how everyone's screen learns a roll
+  // just happened and plays the same animation together. We ignore the
+  // very first value we see (that's just the last round from before this
+  // device connected), and only animate for genuinely new rolls after that.
+  let lastRollSeenId = null;
+  let lastRollInitialized = false;
+  db.ref(ROOM_PATH + '/lastRoll').on('value', (snap) => {
+    const data = snap.val();
+    if (!data) { lastRollInitialized = true; return; }
+    if (!lastRollInitialized) {
+      lastRollSeenId = data.id;
+      lastRollInitialized = true;
+      return;
+    }
+    if (data.id !== lastRollSeenId) {
+      lastRollSeenId = data.id;
+      playRoundAnimation(data.results, data.round, data.rolledBy, data.settlement);
+    }
+  });
+
+  // Reset also needs its own tiny signal so every screen clears its local
+  // "Round history" list at the same moment.
+  let lastResetSeenId = null;
+  let lastResetInitialized = false;
+  db.ref(ROOM_PATH + '/lastReset').on('value', (snap) => {
+    const data = snap.val();
+    if (!data) { lastResetInitialized = true; return; }
+    if (!lastResetInitialized) { lastResetSeenId = data.id; lastResetInitialized = true; return; }
+    if (data.id !== lastResetSeenId) {
+      lastResetSeenId = data.id;
+      clearHistoryUI();
+    }
+  });
+
+  joinBtn.addEventListener('click', () => {
+    const name = joinNameInput.value.trim();
+    if (!name) { joinHint.textContent = 'Enter a name first.'; return; }
+    if (!firebaseReady) { joinHint.textContent = 'Still connecting\u2026'; return; }
+    joinHint.textContent = 'Joining\u2026';
+
+    selfId = 'p' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+
+    db.ref(ROOM_PATH + '/players').once('value').then((snap) => {
+      const existing = snap.val();
+      const isFirst = !existing || Object.keys(existing).length === 0;
+      const newPlayer = {
+        name: name.slice(0, 20),
+        role: isFirst ? 'host' : 'player',
+        balance: isFirst ? 1000 : 0
+      };
+      return db.ref(`${ROOM_PATH}/players/${selfId}`).set(newPlayer);
+    }).then(() => {
+      joinOverlay.style.display = 'none';
+      shareLine.textContent = 'Connected \u2014 share this page\u2019s link with friends so they can join the same game.';
+      setStatus('READY TO ROLL');
+    }).catch((err) => {
+      joinHint.textContent = 'Could not join: ' + err.message;
+    });
+  });
+  joinNameInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') joinBtn.click();
+  });
+
+  activePlayerLine.textContent = 'Every player\u2019s bets are listed below \u2014 scroll down to place them. A HOST must be present before you can roll; the host banks everyone else\u2019s wins and losses and can go negative, but players can\u2019t.';
+
+  function renderPlayers() {
+    playerChips.innerHTML = '';
+    players.forEach((p) => {
+      const chip = document.createElement('div');
+      chip.className = 'player-chip' + (p.role === 'host' ? ' is-host' : '') + (p.id === selfId ? ' active' : '');
+      const initial = p.name.trim().charAt(0).toUpperCase() || '?';
+      const youTag = p.id === selfId ? ' (you)' : '';
+      chip.innerHTML = `
+        <span class="avatar">${initial}</span>
+        <span class="name-col">
+          <span>${p.name}${youTag}</span>
+          <span class="role-tag">${p.role === 'host' ? 'HOST \u00b7 BANK' : 'PLAYER'}</span>
+          <span class="bal-tag">${p.balance}</span>
+        </span>
+      `;
+
+      if (p.role !== 'host') {
+        const makeHostBtn = document.createElement('button');
+        makeHostBtn.className = 'make-host-btn';
+        makeHostBtn.textContent = 'Make host';
+        makeHostBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          setRole(p.id, 'host');
+        });
+        chip.appendChild(makeHostBtn);
+      }
+
+      const removeBtn = document.createElement('button');
+      removeBtn.className = 'remove-player';
+      removeBtn.textContent = '\u2715';
+      removeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        db.ref(`${ROOM_PATH}/players/${p.id}`).remove();
+        db.ref(`${ROOM_PATH}/bets/${p.id}`).remove();
+      });
+      chip.appendChild(removeBtn);
+
+      playerChips.appendChild(chip);
+    });
+    playerCount.textContent = `${players.length}/${MAX_PLAYERS}`;
+    renderBankSelectors();
+  }
+
+  function renderBankSelectors() {
+    const prevAdd = addBalPlayer.value;
+    const prevFrom = transferFrom.value;
+    const prevTo = transferTo.value;
+
+    const optionsHTML = players
+      .map((p) => `<option value="${p.id}">${p.name}${p.role === 'host' ? ' (Host)' : ''}</option>`)
+      .join('');
+
+    addBalPlayer.innerHTML = optionsHTML;
+    transferFrom.innerHTML = optionsHTML;
+    transferTo.innerHTML = optionsHTML;
+
+    const ids = players.map(p => p.id);
+    if (ids.includes(prevAdd)) addBalPlayer.value = prevAdd;
+    if (ids.includes(prevFrom)) transferFrom.value = prevFrom;
+    if (players.length > 1) {
+      if (ids.includes(prevTo) && prevTo !== transferFrom.value) {
+        transferTo.value = prevTo;
+      } else {
+        const other = players.find(p => p.id !== transferFrom.value);
+        if (other) transferTo.value = other.id;
+      }
+    }
+  }
+
+  // ---------- Bank: add funds to any player, or transfer between two ----------
+  let addBalAmt = 100;
+  let transferAmt = 100;
+
+  function setBankMsg(text, kind) {
+    bankMsg.textContent = text || '';
+    bankMsg.className = 'bank-msg' + (kind ? ' ' + kind : '');
+  }
+
+  addBalMinus.addEventListener('click', () => {
+    addBalAmt = Math.max(BANK_STEP, addBalAmt - BANK_STEP);
+    addBalAmount.textContent = addBalAmt;
+  });
+  addBalPlus.addEventListener('click', () => {
+    addBalAmt = Math.min(100000, addBalAmt + BANK_STEP);
+    addBalAmount.textContent = addBalAmt;
+  });
+  addBalBtn.addEventListener('click', () => {
+    const id = addBalPlayer.value;
+    const p = players.find(pp => pp.id === id);
+    if (!p) return;
+    db.ref(`${ROOM_PATH}/players/${id}/balance`).set(p.balance + addBalAmt);
+    setBankMsg(`Added ${addBalAmt} to ${p.name}.`, 'success');
+  });
+
+  transferMinus.addEventListener('click', () => {
+    transferAmt = Math.max(BANK_STEP, transferAmt - BANK_STEP);
+    transferAmount.textContent = transferAmt;
+  });
+  transferPlus.addEventListener('click', () => {
+    transferAmt = Math.min(100000, transferAmt + BANK_STEP);
+    transferAmount.textContent = transferAmt;
+  });
+  transferBtn.addEventListener('click', () => {
+    const fromId = transferFrom.value;
+    const toId = transferTo.value;
+    const from = players.find(p => p.id === fromId);
+    const to = players.find(p => p.id === toId);
+    if (!from || !to) return;
+    if (fromId === toId) {
+      setBankMsg('Pick two different players to transfer between.', 'error');
+      return;
+    }
+    // Players can never go negative; the host is the bank and can (that's
+    // how a host funds the table — by sending out money it doesn't "have").
+    if (from.role !== 'host' && transferAmt > from.balance) {
+      setBankMsg(`${from.name} only has ${from.balance} — can't send ${transferAmt}.`, 'error');
+      return;
+    }
+    const updates = {};
+    updates[`${ROOM_PATH}/players/${fromId}/balance`] = from.balance - transferAmt;
+    updates[`${ROOM_PATH}/players/${toId}/balance`] = to.balance + transferAmt;
+    db.ref().update(updates);
+    setBankMsg(`${from.name} sent ${transferAmt} to ${to.name}.`, 'success');
+  });
+
+  let animating = false;
+  let spinIntervals = [];
+
+  // Renders one betting card per PLAYER (hosts don't bet), stacked so you
+  // can scroll down and see \u2014 and edit \u2014 every player's bets at once.
+  // Anyone can edit anyone's row here, the same way people at a physical
+  // table can see and adjust the stakes together.
+  function renderAllBets() {
+    allBetsEl.innerHTML = '';
+
+    const bettingPlayers = players.filter(p => p.role === 'player');
+
+    if (bettingPlayers.length === 0) {
+      allBetsEl.innerHTML = '<div class="history-empty">Waiting for players to join\u2026</div>';
+      totalStakeValue.textContent = '0';
+      return;
+    }
+
+    bettingPlayers.forEach((p) => {
+      const bets = betsFor(p.id);
+      const card = document.createElement('div');
+      card.className = 'player-bet-card';
+
+      const head = document.createElement('div');
+      head.className = 'player-bet-card-head';
+      const youTag = p.id === selfId ? ' (you)' : '';
+      head.innerHTML = `<span class="pbc-name">${p.name}${youTag}</span><span class="pbc-balance">${p.balance}</span>`;
+      card.appendChild(head);
+
+      const list = document.createElement('div');
+      list.className = 'bet-list';
+
+      SYMBOLS.forEach(s => {
+        const amount = bets[s.name] || 0;
+        const row = document.createElement('div');
+        row.className = 'bet-row' + (amount > 0 ? ' active' : '');
+        row.innerHTML = `
+          <span class="bet-icon">${faceSVG(s.name)}</span>
+          <span class="bet-name">${s.name}</span>
+          <div class="bet-amt-control">
+            <button class="bet-amt-btn minus" aria-label="Decrease ${s.name} bet for ${p.name}">\u2212</button>
+            <span class="bet-amt-value">${amount}</span>
+            <button class="bet-amt-btn plus" aria-label="Increase ${s.name} bet for ${p.name}">+</button>
+          </div>
+        `;
+        row.querySelector('.minus').addEventListener('click', () => {
+          if (animating) return;
+          const next = Math.max(0, amount - BET_STEP);
+          db.ref(`${ROOM_PATH}/bets/${p.id}/${s.name}`).set(next);
+        });
+        row.querySelector('.plus').addEventListener('click', () => {
+          if (animating) return;
+          const next = Math.min(p.balance, amount + BET_STEP);
+          db.ref(`${ROOM_PATH}/bets/${p.id}/${s.name}`).set(next);
+        });
+        list.appendChild(row);
+      });
+      card.appendChild(list);
+
+      const total = totalStakedFor(p.id);
+      const totalLine = document.createElement('div');
+      totalLine.className = 'pbc-total';
+      totalLine.innerHTML = `Staked: <b>${total}</b>`;
+      card.appendChild(totalLine);
+
+      allBetsEl.appendChild(card);
+    });
+
+    const grandTotal = bettingPlayers.reduce((sum, p) => sum + totalStakedFor(p.id), 0);
+    totalStakeValue.textContent = grandTotal;
+  }
+
+  // Inline rename (no window.prompt \u2014 some mobile browsers block it silently)
+  editNameBtn.addEventListener('click', () => {
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = roomName.textContent;
+    input.maxLength = 40;
+    input.style.cssText = 'font:inherit;font-weight:600;color:#2a1a05;background:var(--gold-bright);border:none;border-radius:6px;padding:2px 6px;width:140px;';
+    roomName.replaceWith(input);
+    input.focus();
+    input.select();
+
+    function commit() {
+      const val = input.value.trim() || 'My Game';
+      input.replaceWith(roomName);
+      db.ref(`${ROOM_PATH}/roomName`).set(val);
+    }
+    input.addEventListener('blur', commit);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') input.blur();
+    });
+  });
+
+
+  function setStatus(text) {
+    statusBanner.textContent = text;
+  }
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  function clearField() {
+    spinIntervals.forEach(id => clearInterval(id));
+    spinIntervals = [];
+    diceField.innerHTML = '';
+  }
+
+  function buildThrowDice() {
+    clearField();
+    const trajectories = [
+      { x: -70, rot: -280, delay: 0 },
+      { x: -40, rot: 340,  delay: 40 },
+      { x: -12, rot: -300, delay: 80 },
+      { x: 12,  rot: 320,  delay: 30 },
+      { x: 40,  rot: -260, delay: 70 },
+      { x: 70,  rot: 300,  delay: 10 }
+    ];
+
+    trajectories.forEach((t) => {
+      const die = document.createElement('div');
+      die.className = 'die';
+      die.innerHTML = faceSVG(SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)].name);
+      die.style.position = 'absolute';
+      die.style.left = `calc(50% + ${t.x}px)`;
+      die.style.top = '190px';
+      die.style.transform = 'translate(-50%, 0) rotate(0deg)';
+      die.style.opacity = '0';
+      diceField.appendChild(die);
+
+      // spin the face rapidly while airborne, like a real tumbling die
+      const spinId = setInterval(() => {
+        die.innerHTML = faceSVG(SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)].name);
+      }, 65);
+      spinIntervals.push(spinId);
+
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          die.style.transition = 'transform 550ms cubic-bezier(.2,.7,.3,1), opacity 150ms ease';
+          die.style.opacity = '1';
+          die.style.transform = `translate(-50%, -170px) rotate(${t.rot}deg)`;
+
+          setTimeout(() => {
+            die.style.transition = 'transform 500ms cubic-bezier(.5,0,.9,.4), opacity 250ms ease 250ms';
+            die.style.transform = `translate(-50%, 40px) rotate(${t.rot + 160}deg) scale(0.7)`;
+            die.style.opacity = '0';
+          }, 560);
+        }, t.delay);
+      });
+    });
+  }
+
+  function buildResultDice(results) {
+    clearField();
+    results.forEach((name, i) => {
+      const die = document.createElement('div');
+      die.className = 'die reveal-glow';
+      die.style.animationDelay = (i * 70) + 'ms';
+      die.style.opacity = '0';
+      die.style.animationFillMode = 'forwards';
+      die.innerHTML = faceSVG(name);
+      diceField.appendChild(die);
+    });
+    requestAnimationFrame(() => {
+      diceField.querySelectorAll('.die').forEach(d => d.style.opacity = '1');
+    });
+  }
+
+  function renderTally(results) {
+    tallyEl.innerHTML = '';
+    SYMBOLS.forEach(s => {
+      const count = results.filter(name => name === s.name).length;
+      const item = document.createElement('div');
+      item.className = 'tally-item';
+      item.innerHTML = `<span><span class="sym-mini">${faceSVG(s.name)}</span>${s.name}</span><span class="cnt">${count}</span>`;
+      tallyEl.appendChild(item);
+    });
+  }
+
+  // Payout rule: for each symbol you bet on, count how many of the 6 dice
+  // match that symbol.
+  //   0 or 1 match  -> lose that stake entirely
+  function addHistory(roundNumber, results, rolledBy) {
+    if (historyEmpty) historyEmpty.remove();
+    const row = document.createElement('div');
+    row.className = 'history-row';
+    const diceStr = results.map(name => `<span class="sym-mini">${faceSVG(name)}</span>`).join('');
+    const byLabel = rolledBy ? ` · ${rolledBy}` : '';
+    row.innerHTML = `<span class="history-round">Round ${roundNumber}${byLabel}</span><span class="history-dice">${diceStr}</span>`;
+    historyList.prepend(row);
+  }
+
+  function clearHistoryUI() {
+    historyList.innerHTML = '<div class="history-empty" id="historyEmpty">No rounds played yet</div>';
+    resultPanel.classList.remove('show');
+  }
+
+  // Plays the throw -> cup -> shake -> turn -> reveal sequence for one round.
+  // `settlement` comes straight from the server (perPlayer rows + the
+  // host's net change), so every connected device renders the exact same
+  // payout breakdown — no client-side recomputation, no risk of drifting
+  // out of sync with someone else's screen.
+  async function playRoundAnimation(results, roundNumber, rolledBy, settlement) {
+    animating = true;
+    rollBtn.disabled = true;
+    resultPanel.classList.remove('show');
+    payoutBreakdown.innerHTML = '';
+    payoutTotal.className = 'payout-total';
+    payoutTotal.textContent = '';
+    cupWrap.classList.remove('lifted', 'sliding', 'turning');
+    cupWrap.style.transition = 'none';
+    cupWrap.style.transform = 'translateX(-50%)';
+    void cupWrap.offsetWidth;
+    cupWrap.style.transition = '';
+
+    // PHASE 1: THROW
+    setStatus(rolledBy ? `${rolledBy} IS THROWING...` : 'THROWING...');
+    buildThrowDice();
+    await sleep(1100);
+
+    // PHASE 2: FALL INTO CUP
+    setStatus('DICE IN CUP');
+    clearField();
+    await sleep(900);
+
+    // PHASE 3: SHAKE - cup slides and rocks across the board
+    setStatus('SHAKING...');
+    cupWrap.classList.add('sliding');
+    await sleep(900);
+    setStatus('GOOD LUCK!');
+    await sleep(1000);
+    cupWrap.classList.remove('sliding');
+    cupWrap.style.transform = 'translate(-50%, 0)';
+    await sleep(200);
+
+    // PHASE 4: TURN + REVEAL - cup turns in place on the board, then lifts away
+    setStatus('REVEALING...');
+    cupWrap.classList.add('turning');
+    await sleep(720);
+    cupWrap.classList.remove('turning');
+    cupWrap.classList.add('lifted');
+    await sleep(1000);
+
+    buildResultDice(results);
+    await sleep(700);
+
+    // PHASE 5: RESULT
+    setStatus('RESULT');
+    resultDiceRow.innerHTML = '';
+    results.forEach(name => {
+      const die = document.createElement('div');
+      die.className = 'die';
+      die.innerHTML = faceSVG(name);
+      resultDiceRow.appendChild(die);
+    });
+    renderTally(results);
+
+    if (settlement) {
+      (settlement.perPlayer || []).forEach(entry => {
+        if (!entry.rows || !entry.rows.length) return;
+        const header = document.createElement('div');
+        header.className = 'active-player-line';
+        header.style.marginTop = '4px';
+        header.innerHTML = `<b>${entry.name}</b>`;
+        payoutBreakdown.appendChild(header);
+
+        entry.rows.forEach(r => {
+          const row = document.createElement('div');
+          row.className = 'payout-row ' + (r.net > 0 ? 'win' : 'lose');
+          const label = r.net > 0 ? `WIN +${r.net}` : (r.net < 0 ? `LOSE ${r.staked}` : 'BREAK EVEN');
+          row.innerHTML = `<span><span class="sym-mini">${faceSVG(r.symbol)}</span>${entry.name} · ${r.symbol} · ${r.matches}× (bet ${r.staked})</span><span>${label}</span>`;
+          payoutBreakdown.appendChild(row);
+        });
+      });
+
+      if (settlement.hostDelta) {
+        const hostRow = document.createElement('div');
+        hostRow.className = 'payout-total';
+        hostRow.classList.add(settlement.hostDelta > 0 ? 'lose' : 'win');
+        hostRow.style.marginTop = '10px';
+        hostRow.textContent = settlement.hostDelta > 0
+          ? `${settlement.hostName} (HOST) PAYS OUT ${settlement.hostDelta}`
+          : `${settlement.hostName} (HOST) COLLECTS ${Math.abs(settlement.hostDelta)}`;
+        payoutBreakdown.appendChild(hostRow);
+      }
+    }
+
+    resultPanel.classList.add('show');
+    addHistory(roundNumber, results, rolledBy);
+
+    await sleep(200);
+    setStatus('READY TO ROLL');
+
+    animating = false;
+    rollBtn.disabled = false;
+  }
+
+  // Payout rule: for each symbol a player bet on, count matches among the
+  // 6 dice. 0-1 matches loses the stake; n matches (n>=2) returns the
+  // stake back plus n times the stake as winnings.
+  function calcPayout(matches, stakeAmount) {
+    if (matches <= 1) return { returned: 0, net: -stakeAmount };
+    const returned = stakeAmount * (matches + 1);
+    return { returned, net: returned - stakeAmount };
+  }
+
+  // Whoever presses ROLL computes the result and the full settlement on
+  // their own device (like whoever physically shakes the cup), then writes
+  // it to Firebase — every connected screen (including this one) reacts to
+  // that write via the lastRoll listener above and plays the same
+  // animation with the same numbers.
+  rollBtn.addEventListener('click', () => {
+    if (animating) return;
+
+    const host = players.find(p => p.role === 'host');
+    if (!host) { setStatus('ADD A HOST FIRST'); return; }
+
+    let anyBet = false;
+    for (const p of players) {
+      if (p.role !== 'player') continue;
+      const total = totalStakedFor(p.id);
+      if (total > p.balance) {
+        setStatus(`${p.name.toUpperCase()} DOESN'T HAVE ENOUGH BALANCE`);
+        return;
+      }
+      if (total > 0) anyBet = true;
+    }
+    if (!anyBet) { setStatus('PLACE A BET FIRST'); return; }
+
+    const results = [];
+    for (let i = 0; i < 6; i++) {
+      results.push(SYMBOL_NAMES[Math.floor(Math.random() * SYMBOL_NAMES.length)]);
+    }
+
+    let bankerDelta = 0;
+    const perPlayer = [];
+    const balanceUpdates = {};
+
+    players.forEach(p => {
+      if (p.role !== 'player') return;
+      const bets = betsFor(p.id);
+      const total = totalStakedFor(p.id);
+      if (total <= 0) return;
+
+      let newBalance = p.balance - total;
+      let playerNet = 0;
+      const rows = [];
+      SYMBOL_NAMES.forEach(symbol => {
+        const staked = bets[symbol] || 0;
+        if (staked <= 0) return;
+        const matches = results.filter(r => r === symbol).length;
+        const payout = calcPayout(matches, staked);
+        playerNet += payout.net;
+        newBalance += payout.returned;
+        rows.push({ symbol, staked, matches, net: payout.net });
+      });
+
+      balanceUpdates[p.id] = newBalance;
+      bankerDelta += playerNet;
+      perPlayer.push({ id: p.id, name: p.name, rows, playerNet });
+    });
+
+    const me = players.find(p => p.id === selfId);
+
+    db.ref(ROOM_PATH + '/roundCounter').transaction(current => (current || 0) + 1)
+      .then((result) => {
+        const roundNumber = result.snapshot.val();
+        const updates = {};
+        Object.keys(balanceUpdates).forEach(id => {
+          updates[`${ROOM_PATH}/players/${id}/balance`] = balanceUpdates[id];
+        });
+        updates[`${ROOM_PATH}/players/${host.id}/balance`] = host.balance - bankerDelta;
+        updates[`${ROOM_PATH}/lastRoll`] = {
+          id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7),
+          round: roundNumber,
+          results,
+          rolledBy: me ? me.name : null,
+          settlement: { perPlayer, hostId: host.id, hostName: host.name, hostDelta: bankerDelta }
+        };
+        return db.ref().update(updates);
+      })
+      .catch((err) => setStatus('ROLL FAILED: ' + err.message));
+  });
+
+  resetBtn.addEventListener('click', () => {
+    if (animating) return;
+    const updates = {};
+    updates[`${ROOM_PATH}/roundCounter`] = 0;
+    updates[`${ROOM_PATH}/lastReset`] = { id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7) };
+    db.ref().update(updates);
+  });
+
+})();
+</script>
+</body>
+</html>
